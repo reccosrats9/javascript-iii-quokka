@@ -1,5 +1,10 @@
-var answers = ["yes", "no", "yes", "no", "no", "no"]
-
+var answers = ["yes", "no", "yes", "no", "no", "no", 15]
+let flippedAnswers= answers.map((answer)=>{
+    if (answer==="yes"){return "no"}
+    else if (answer==="no"){return "yes"}
+    else {return "IDK"}
+})
+flippedAnswers
 //map over answers
 //change yes into no and no into yes
 
@@ -17,8 +22,18 @@ var employees = [
 //split on the - in name and turn name into first_name and last_name
 //save it to a new array variable
 
+var newEmployees= employees.map((person)=>{
+    let names= person.name.split('-')
+    return {
+        first_name:names[0],
+        last_name:names[1],
+        pay:person.pay+3
+    }
+    
+    return person
+})
 
-
+newEmployees
 
 //DESIRED RESULT = 
 /*

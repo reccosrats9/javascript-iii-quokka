@@ -40,7 +40,7 @@ Notice how in all three of these cases, we have the exact same for loop structur
 ```js
     ary.forEach(user => user.fullName + " " + user.lastName)
 
-    ary.forEach(contact => `${contact.fullName} : ${contact.phone}`)
+    ary.forEach(contact => console.log(`${contact.fullName} : ${contact.phone}`))
 
     ary.forEach(email => sendEmail(email, subject, body))
 ```
