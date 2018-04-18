@@ -20,7 +20,7 @@ var zebraSound = zenny.makeSound();
 zebraSound;
 var lionSound = lenny.makeSound();
 lionSound;
-
+console.log(Animal.prototype)
 
 class BankAccount{
     constructor(accountNum, startingAmount){
